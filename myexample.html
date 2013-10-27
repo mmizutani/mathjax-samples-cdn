@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MathJax TeX Test Page</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+  	equationNumbers: { autoNumber: "AMS" } 
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+    Macros: {
+      RR: "{\\bf R}",
+      bold: ["{\\bf #1}",1]
+    }
+  }
+});
+</script>
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<style type="text/css">
+<!--
+p {
+	border-style:groove;
+}
+-->
+</style>
+
+</head>
+<body>
+
+<h1>MathJax Basic Example</h1>
+
+<p>
+When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+</p>
+
+<p>
+... when $x < y$ we have ...
+</p>
+
+<p>
+would define \RR to produce a bold-faced “R”, and \bold{...} to put its argument into bold face. Both definitions would be available throughout the rest of the page.
+</p>
+
+<p>
+Note that the AMS environments come in two forms: starred and unstarred. The unstarred versions produce equation numbers (when autoNumber is set to "AMS") and the starred ones don’t. For example
+
+\begin{equation}
+   E = mc^2
+\end{equation}
+will be numbered, while
+
+\begin{equation*}
+   e^{\pi i} + 1 = 0
+\end{equation*}
+won’t be numbered (when autoNumber is "AMS").
+</p>
+
+<p>
+<a href="http://docs.mathjax.org/en/latest/tex.html#tex-support"><h3>Numbering</h3></a>
+You can use \label to give an equation an identifier that you can use to refer to it later, and then use \ref or \eqref within your document to insert the actual equation number at that location, as a reference. For example,
+
+In equation \eqref{eq:sample}, we find the value of an
+interesting integral:
+
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+includes a labeled equation and a reference to that equation. Note that references can come before the corresponding formula as well as after them. See the equation numbering links in the MathJax examples page for more examples.
+
+You can configure the way that numbers are displayed and how the references to them are made using parameters in the equationNumbers block of your TeX configuration. See the TeX configuration options page for more details.
+</p>
+
+<p>
+Unlike non-technical typesetting environments like MS Word, \LaTeX\ is enormously powerful when it comes to writing in ``math,'' enabling us to render nice-lookin' mathematical material, ranging from the fairly elementary: \[ f(x)=x^2 \Rightarrow F(x) = \int x^2 dx = \frac{x^3}{3}+C, \] \noindent to the relatively deep: \[ \displaystyle\lim_{p \rightarrow \infty, p \ {\rm prime}} \kappa_a \Bigl( \mathbb{Z}_p,\bigl\{ [x,x \pm 1 \ {\rm mod} \ p],[x,x^{-1} \ {\rm mod} \ p] \ | \ x=0,1,...,p-1 \bigr\} \Bigr) = 3. \]
+
+I'd like to ease you into using \LaTeX, but with so much math out there, where do we start?
+
+In this handout I've included a number of the sorts of things you'll need to know how to do to begin writing; as we progress in our course I'll indicate the commands you'll need to typeset some of the trickier symbols.  I'm really giving you two files (both available on the course website), one consisting of the output .pdf document, all nice `n' purty, and the other, the .tex file, consisting of the raw \LaTeX\ commands, so you can see the code that made the file look the way it does.  By reading them in parallel, you should be able to get a sense as to how \LaTeX\ works much of its mathematical magic.
+</p>
+
+</body>
+</html>

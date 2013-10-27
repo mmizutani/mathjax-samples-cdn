@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+    <namespace>deriversatile.com.mathjaxhelpdoc.1.0</namespace>
+    <virtualFolder>doc</virtualFolder>
+    <customFilter name="MathJax Help Documentation">
+        <filterAttribute>mathjax</filterAttribute>
+        <filterAttribute>1.0</filterAttribute>
+    </customFilter>
+    <filterSection>
+        <filterAttribute>mathjax</filterAttribute>
+        <filterAttribute>1.0</filterAttribute>
+        <toc>
+            <section title="MathJax Help Documentation" ref="examples.html">
+                <section ref="sample-tex.html" title="Page using TeX notation"/>
+                <section ref="sample-mml.html" title="Page using MathML notation"/>
+                <section ref="sample-asciimath.html" title="Page using AsciiMath notation"/>
+                <section ref="sample.html" title="Page included several examples TeX equations"/>
+                <section ref="sample-eqnum.html" title="Page of TeX equations with automatic numbering"/>
+                <section ref="sample-eqrefs.html" title="Page of TeX equations with equation references"/>
+                <section ref="sample-macros.html" title="Example of defining TeX macros"/>
+                <section ref="sample-autoload.html" title="Defining macros to autoload the extensions in
+  which they are implemented"/>
+                <section ref="sample-all-at-once.html" title="Example of waiting until all the 
+  math is typeset before displaying the page"/>
+                <section ref="sample-dynamic-steps.html" title="Showing an equation one step at a time"/>
+                <section ref="sample-dynamic.html" title="Display an equation typed in by a user"/>
+                <section ref="sample-dynamic-2.html" title="Preview text containing math typed in by a user"/>
+                <section ref="sample-loader.html" title="Loading MathJax into a page after it is loaded"/>
+                <section ref="sample-loader-config.html" title="Loading MathJax dynamically with in-line configuration"/>
+                <section ref="sample-signals.html" title="Page showing MathJax signals during page processing"/>
+            </section>
+        </toc>
+        <keywords>
+            <keyword name="foo" id="MyApplication::foo" ref="doc.html#foo"/>
+            <keyword name="bar" ref="doc.html#bar"/>
+            <keyword id="MyApplication::foobar" ref="doc.html#foobar"/>
+        </keywords>
+        <files>
+            <file>classic.css</file>
+            <file>*.html</file>
+        </files>
+    </filterSection>
+</QtHelpProject>
