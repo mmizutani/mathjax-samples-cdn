@@ -30,6 +30,16 @@ MathJax.Hub.Config({
 });
 </script>
 
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["autobold.js"] }});
+</script>
+
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
@@ -47,16 +57,238 @@ p {
 
 <h1>MathJax Basic Example</h1>
 
+
 <blockquote>
 
-<h2>Libor Market Model</h2>
+<h2>MathJax docs</h2>
+<ul>
+<li><a href="file:///home/deriversatile/Documents/QtProjects/mathjax-qthelp/mathjax-samples-cdn/myexample.html">This file</a></li>
+<li><a href="http://docs.mathjax.org/en/latest/tex.html#tex-support">MathJax Help Doc</a></li>
+<li><a href="Commands available in MathJax">Commands available in MathJax</a></li>
+</ul>
 
+<p>\[
+{\cal AB}AB
+\cal AB \rm AB
+\cal{AB}CD \\
+\cal{P} \\
+a\cdot b \\
+\aleph \\
+\array{ a & b+1 \cr c+1 & d } \\
+\binom n k \\
+
+|x| = 
+\cases{
+x  & \text{if } x\ge 0\cr
+-x & \text{if } x\lt 0
+}\\
+
+a \cdot b \\
+
+\frac ab+\displaystyle\frac ab+\textstyle\frac ab
++\scriptstyle\frac ab+\scriptscriptstyle\frac ab\\
+
+\frac ab + {\displaystyle \frac cd + \frac ef} + \frac gh\\
+
+\eqalign{
+(a+b)^2 &= (a+b)(a+b) \\
+        &= a^2 + ab + ba + b^2 \\
+        &= a^2 + 2ab + b^2
+}\\
+
+\eqalignno{
+3x - 4y &= 5   &(\dagger) \cr
+x  +  7 &= -2y &(\ddagger)\cr
+      z &= 2
+}\\
+
+\gcd_{\rm sub}^{\rm sup}\\
+
+
+\begin{matrix}
+x_{11} & x_{12} \\
+x_{21} & x_{22} \\
+\hline
+x_{31} & x_{32}
+\end{matrix}\\
+
+\begin{array}{l}
+\text{Side Angle Side}\\
+\text{S}\hphantom{\text{ide }}\text{A}\hphantom{\text{ngle }}\text{S}
+\end{array}\\
+
+\href{http://www.onemathematicalcat.org}{M^{A^{T^H}}}\\
+
+P \implies Q\\
+
+\inf_{\rm limit}\\
+
+
+\left\langle
+\matrix{a & b\cr c & d}
+\right\rangle\\
+
+\left\lbrace \frac ab, c \right\rbrace\\
+
+x_1,\ldots,x_n ~~ \|x\|\\
+
+\sum_{n=1}^\infty\\
+
+This\ is\ a\ sentence. This~is~a~sentence.\\
+
+\{x | x\in\Bbb Z\} ~~~ \{x\,|\,x\in\Bbb Z\}\\
+
+f(x) = x^2,\ 
+f'(x) = 2x,\ 
+f''(x) = 2\\
+
+\approx, \approxeq\\
+
+\bar x, \check o, \dot x, \hat x, \tilde x\\
+
+\Bbb R\\
+
+F(x)\ \buildrel \rm def \over {:=} \int_{-\infty}^{\infty} f(x) dx\\
+
+\dfrac{a-1}{b-1}\\
+
+x_1, \dots, x_n\\
+
+\ge, \gt, \le, \lt\\
+
+\in \Leftrightarrow \sqrt[3]{x}\\
+
+\leqalignno{
+3x - 4y &= 5   &(\dagger) \cr
+x  +  7 &= -2y &(\ddagger)\cr
+      z &= 2
+}\\
+
+\int\limits_a^b f(x)\,dx \\
+
+\int_a^b f(x)\,dx\\
+
+\mathfrak{ABCDEFGHIJKLMNOPQRSTUVWXYZ}\\
+
+3\equiv 5 \mod 2\\
+
+\sum\nolimits_{k=1}^n a_k, \sum_{k=1}^n a_k\\
+
+\oint\\
+
+\frac{\partial f}{\partial x}\\
+
+A = \pmatrix{
+a_{11} & a_{12} & \ldots & a_{1n} \cr
+a_{21} & a_{22} & \ldots & a_{2n} \cr
+\vdots & \vdots & \ddots & \vdots \cr
+a_{m1} & a_{m2} & \ldots & a_{mn} \cr
+}\\
+
+f'', \prod_{j=1}^n, \Re\\
+
+\scr ABCDEFGHIJKLMNOPQRSTUVWXYZ\\
+
+|x| = x \text{ for all \(x \ge 0\)}\\
+
+\sim, \thicksim\\
+
+\varinjlim\\
+
+\propto\\
+
+\vec v, \widehat a\\
+
+\verb*$x^2\sqrt y$* \text{ yields } x^2\sqrt y\\
+
+\xrightarrow{ab}\\
+
+\begin{align}
+(a+b)^2 &= (a+b)(a+b)          \tag{3.1c}      \\
+        &= a^2 + ab + ba + b^2 \tag{$\dagger$} \\
+        &= a^2 + 2ab + b^2     \tag{$\ast$}
+\end{align}
+\\
+
+\begin{aligned}
+\tag{3.1}
+x_1 &= 1\cr
+x_2 &= 1 + 2\cr
+x_3 &= 1 + 2 + 3
+\end{aligned}\\
+
+\begin{alignedat}{1}
+\tag{3.1}
+x_1 &= 1\cr
+x_2 &= 1 + 2\cr
+x_3 &= 1 + 2 + 3
+\end{alignedat}\\
+
+|x| =
+\begin{cases}
+x  & \text{ if } x\ge 0 \\
+-x & \text{ if } x \lt 0
+\end{cases}\\
+
+\begin{eqnarray}
+y &=& (x-1)^2 \\
+  &=& (x-1)(x-1) \\
+  &=& x^2 - 2x + 1
+\end{eqnarray}\\
+
+\begin{gathered}
+\tag{3.1}
+x = 1\cr
+y = 2\cr
+z = 3
+\end{gathered}\\
+
+
+
+
+
+
+
+
+
+
+
+\]</p>
+
+<p>
+\(\textbf{Special characters.}\) You've got some pretty standard
+stuff: \[ \infty,
++,-,\pm,\times,\div,=,\neq,\leq,\geq,<,>,\sim,\equiv,\cong, \]
+and so forth.  If you want to ``negate'' one of the
+relations listed above, the command \texttt{not} comes
+in handy: \[ \not\leq, \not\geq, \not<, \not>, \not\sim, \not\equiv,
+\not\cong. \]
+</p>
+
+<h2>Libor Market Model</h2>
 <p>
 Consider an interest rate cap with strike rate \(R_c\) and reset dates at times \(t_1, t_2, ..., t_N\) with a final payment date \(t_{N+1}\).
 </p>
 
-<h2>Example</h2>
+<h2>Equation Numbering</h2>
+<p>
+\begin{equation}
+   E = mc^2
+\end{equation}
+\begin{equation*}
+   e^{\pi i} + 1 = 0
+\end{equation*}
 
+In equation \eqref{eq:sample}, we find the value of an
+interesting integral:
+
+\begin{equation}
+  \int_0^\infty \frac{x^3}{e^x-1}\,dx = \frac{\pi^4}{15}
+  \label{eq:sample}
+\end{equation}
+</p>
+
+<h2>Example</h2>
 <p>
 Unlike non-technical typesetting environments like MS Word, \(\LaTeX\) is enormously powerful when it comes to writing in ``math,'' enabling us to render nice-lookin' mathematical material, ranging from the fairly elementary: \[ f(x)=x^2 \Rightarrow F(x) = \int x^2 dx = \frac{x^3}{3}+C, \] to the relatively deep: \[ \displaystyle\lim_{p \rightarrow \infty, p \ {\rm prime}} \kappa_a \Bigl( \mathbb{Z}_p,\bigl\{ [x,x \pm 1 \ {\rm mod} \ p],[x,x^{-1} \ {\rm mod} \ p] \ | \ x=0,1,...,p-1 \bigr\} \Bigr) = 3. \]
 
@@ -65,6 +297,28 @@ I'd like to ease you into using \(\LaTeX\), but with so much math out there, whe
 In this handout I've included a number of the sorts of things you'll need to know how to do to begin writing; as we progress in our course I'll indicate the commands you'll need to typeset some of the trickier symbols.  I'm really giving you two files (both available on the course website), one consisting of the output .pdf document, all nice `n' purty, and the other, the .tex file, consisting of the raw \(\LaTeX\) commands, so you can see the code that made the file look the way it does.  By reading them in parallel, you should be able to get a sense as to how \LaTeX\ works much of its mathematical magic.
 </p>
 
+<p>
+It follows that $$ a < c. $$
+This is because $ a <  b $ and $ b < c. $ <br/>
+
+For example, <script type="math/tex">x+\sqrt{1-x^2}</script> represents an in-line equation in TeX notation, and
+<script type="math/tex; mode=display">
+  \sum_{n=1}^\infty {1\over n^2} = {\pi^2\over 6}
+</script>
+is a displayed TeX equation.
+</p>
+
+<p>
+... when $x < y$ we have ...<br>
+... when $x &lt; y$ we have ...<br>
+... when $x \lt y$ we have ...$\gt$<br>
+<span>$</span> 
+</p>
+
+<h2>Macros</h2>
+<p>
+I'm using \(\LaTeX\) macros like $ \RR $ and $ \bold{x} .$
+</p>
 
 <h2>The Lorenz Equations</h2>
 
